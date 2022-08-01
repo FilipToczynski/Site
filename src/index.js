@@ -17,11 +17,11 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="spotify" element={<Spotify />} />
-        <Route path="https://toczynski.netlify.app/bellycious" element={<Bellycious />} />
+        <Route path="bellycious" element={<Bellycious />} />
         <Route path="cloud" element={<Cloud />} />
         <Route path="this" element={<This />} />
         <Route path="/thanks" element={<Thanks />} />
-      </Routes>
+      </Routes> 
     </BrowserRouter>  
   </LanguageContextProvider>
 );
