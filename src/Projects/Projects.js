@@ -15,7 +15,7 @@ const Projects = () => {
         </>
       </h1>
       <div className={styles.projects}>
-        <NavLink to="https://toczynski.netlify.app/bellycious"> 
+        <NavLink to="bellycious">
           <div className={styles.projects__project}>
             <fig className={styles.projects__figure}>
               <img
