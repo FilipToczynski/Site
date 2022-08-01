@@ -13,7 +13,7 @@ import { LanguageContextProvider } from "./store/langContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <LanguageContextProvider>
-    <BrowserRouter>
+    <BrowserRouter basename="https://toczynski.netlify.app/">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="spotify" element={<Spotify />} />
