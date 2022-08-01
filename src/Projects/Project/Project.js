@@ -29,6 +29,10 @@ const Project = (props) => {
             </div>
           </div>
           <p className={styles.project__description}>{props.description}</p>
+          <div>
+            <a href={props.live} className={styles.project__link} target="_blank" rel="noreferrer">Live</a>
+            <a href={props.code} className={styles.project__link} target="_blank" rel="noreferrer">Code</a>
+          </div>
         </div>
 
         <video id="my-video" controls preload="auto" autoPlay>

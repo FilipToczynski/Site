@@ -9,6 +9,8 @@ const Spotify = () => {
   const icon = <SiHomebridge />;
   const src = "https://filiptoczynski.netlify.app/img/not-spotify.mp4";
   const langCtx = useContext(languageContext);
+  const live = 'https://not-spotify.netlify.app/';
+  const code = 'https://github.com/FilipToczynski/Not-spotify'
   const desc = `${
     !langCtx.language
       ? "Recreated Spotifys landing page to practice RWD."
@@ -30,6 +32,8 @@ const Spotify = () => {
       route="/"
       icon={icon}
       stack={stack}
+      live={live}
+      code={code}
     />
   );
 };

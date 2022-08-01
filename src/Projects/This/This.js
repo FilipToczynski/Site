@@ -10,6 +10,8 @@ const This = () => {
   const icon = <CgChevronRightO />;
   const src = "xd";
   const langCtx = useContext(languageContext);
+  const live = 'https://toczynski.netlify.app/';
+  const code = 'https://github.com/FilipToczynski/Site'
   const desc = `${
     !langCtx.language
       ? "My portfolio website made with React."
@@ -34,6 +36,8 @@ const This = () => {
       route="/cloud"
       icon={icon}
       stack={stack}
+      live={live}
+      code={code}
     />
   );
 };

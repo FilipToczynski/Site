@@ -10,7 +10,8 @@ const Bellycious = () => {
   const icon = <CgChevronRightO />;
   const src = "https://filiptoczynski.netlify.app/img/Bellycious.mp4";
   const langCtx = useContext(languageContext);
-
+  const live = 'https://bellycious.netlify.app/';
+  const code = 'https://github.com/FilipToczynski/Bellycious'
   const desc = `${
     !langCtx.language
       ? "App for browsing food recipes from forkify-API. Project I made to practice React, TypeScript, and unit testing. Also made a login functionality with firebase-API."
@@ -39,6 +40,8 @@ const Bellycious = () => {
       route="/this"
       icon={icon}
       stack={stack}
+      live={live}
+      code={code}
     />
   );
 };

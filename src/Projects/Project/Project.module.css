@@ -60,6 +60,17 @@
   width: 50%;
 }
 
+.project__link {
+  color: #c1e1ff;
+  margin: 0 0 0 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.project__link:hover {
+  color: #7dbffd;
+  transition: all 0.3s ease;
+}
+
 .project__video {
   height: 100%;
   width: 100%;

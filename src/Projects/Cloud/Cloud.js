@@ -11,6 +11,8 @@ const Cloud = () => {
   const icon = <CgChevronRightO />;
   const src = "https://filiptoczynski.netlify.app/img/cloud-host.mp4";
   const langCtx = useContext(languageContext);
+  const live = 'https://cloudhostapp.netlify.app/';
+  const code = 'https://github.com/FilipToczynski/Cloud-Host'
   const desc = `${
     !langCtx.language
       ? "Practice website with modern features like sticky navigation, slide component, and some cool animations."
@@ -35,6 +37,8 @@ const Cloud = () => {
       route="/spotify"
       icon={icon}
       stack={stack}
+      live={live}
+      code={code}
     />
   );
 };
