@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.module.css";
+import App from "./App";
+import Spotify from "./Projects/Spotify/Spotify";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Bellycious from "./Projects/Bellycious/Bellycious";
+import Cloud from "./Projects/Cloud/Cloud";
+import This from "./Projects/This/This";
+import Thanks from "./Thanks/Thanks";
+import { LanguageContextProvider } from "./store/langContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <LanguageContextProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="spotify" element={<Spotify />} />
+        <Route path="bellycious" element={<Bellycious />} />
+        <Route path="cloud" element={<Cloud />} />
+        <Route path="this" element={<This />} />
+        <Route path="/thanks" element={<Thanks />} />
+      </Routes>
+    </BrowserRouter>  
+  </LanguageContextProvider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
