@@ -1,0 +1,42 @@
+
+.footer {
+    height: 25vh;
+    width: auto;
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #f1f1f1;
+}
+
+.footer__react * {
+    padding: 0 .5rem ;
+}
+
+.spin {
+    animation: spins 10s infinite linear;   
+}
+
+@keyframes spins {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 500px) {
+   .footer * {
+    font-size: 0.8rem;
+   }
+  }

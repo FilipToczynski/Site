@@ -1,0 +1,193 @@
+.project__view {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 100vw;
+  height: 100vh;
+}
+.project__icon {
+  margin-left: 1rem;
+}
+
+.project__icon:last-child {
+  cursor: pointer;
+}
+
+.project__icon * {
+  padding-right: 0.2rem;
+}
+
+.project__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.project__about {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem;
+  color: #fff;
+}
+.project__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.project__header {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.project__header::after {
+  content: "";
+  width: 50%;
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 1rem;
+}
+
+.project__description {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+  width: 50%;
+}
+
+.project__video {
+  height: 100%;
+  width: 100%;
+}
+
+.project__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: #d10024;
+  text-decoration: none;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  top: 50%;
+  right: 1%;
+  z-index: 999;
+}
+
+.project__button:hover {
+  animation: gradient 16s infinite;
+  transition: all 0.3s ease;
+  box-shadow: 0.1rem 0.1rem 1.5rem rgba(255, 255, 255, 0.4);
+}
+
+.project__button::after:active {
+  height: 4.7rem;
+  width: 4.7rem;
+  transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.project__button::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: -999;
+  height: 4rem;
+  width: 4rem;
+  background-color: transparent;
+  transition: all 0.4s ease;
+  animation: spins 20s infinite;
+  border: 1px solid white;
+}
+
+.project__button:hover::after {
+  height: 5rem;
+  width: 5rem;
+  transition: all 0.4s ease;
+  border: 1px solid white;
+  animation: spins 30s infinite;
+  box-shadow: 0.2px 0.2px 0.2px 0.2px #ff0530;
+  color: transparent;
+}
+
+.project__button:active::after {
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  height: 12rem;
+  width: 12rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-color: #d10024;
+  }
+  10% {
+    background-color: #e20027;
+  }
+  20% {
+    background-color: #f3002a;
+  }
+  30% {
+    background-color: #ff0530;
+  }
+  40% {
+    background-color: #ff163e;
+  }
+  50% {
+    background-color: #ff274c;
+  }
+  60% {
+    background-color: #ff163e;
+  }
+  70% {
+    background-color: #ff0530;
+  }
+  80% {
+    background-color: #f3002a;
+  }
+  90% {
+    background-color: #e20027;
+  }
+  100% {
+    background-color: #c00021;
+  }
+}
+
+@keyframes spins {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .project__view {
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .project__view {
+    height: 130vh;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .project__view {
+    height: 160vh;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .project__view {
+    height: 100vh;
+  }
+}

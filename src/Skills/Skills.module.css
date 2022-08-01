@@ -1,0 +1,62 @@
+
+.skills {
+    height: 80vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #fff;
+   padding: 2rem 0;
+    background: rgb(34, 35, 38);
+    background: -moz-linear-gradient(
+      135deg,
+      rgba(34, 35, 38, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      135deg, 
+      rgba(34, 35, 38, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background: linear-gradient(
+      135deg,
+      rgba(34, 35, 38, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222326",endColorstr="#000000",GradientType=1);
+  
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.skills__skill {
+    padding: 0;
+    margin: 0;
+}
+
+.skills__header {
+    margin-left: 2rem;
+    padding: 1rem 0 1rem 0;
+}
+@media screen and (max-width: 1200px) {
+  .skills {
+   font-size: 0.8rem;
+   height: 40vh;
+  }
+  .skills__header {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills {
+   font-size: 0.6rem;
+   height: 30vh;
+  }
+  .skills__header {
+    font-size: 0.6rem;
+  }
+}
