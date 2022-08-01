@@ -28,7 +28,7 @@ const Contact = () => {
         <input
           type="hidden"
           name="_next"
-          value="http://localhost:3000/thanks"
+          value="https://toczynski.netlify.app/thanks"
         ></input>
         <textarea
           type="text"
