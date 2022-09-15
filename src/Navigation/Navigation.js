@@ -93,7 +93,7 @@ const Navigation = () => {
               >
                 <MdLanguage />
               </IconContext.Provider>
-              {langCtx.language ? "PL" : "EN"}
+              {!langCtx.language ? "PL" : "EN"}
             </li>
           </ul>
         </nav>
