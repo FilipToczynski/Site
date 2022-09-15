@@ -40,9 +40,12 @@
   position: relative;
 }
 
+
 .hero__image {
-  width: 22rem;
-  background-color: aqua;
+  height: 22rem;
+  width: 25rem;
+  background-image: url('../images/new3.jpg');
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 900px) {
