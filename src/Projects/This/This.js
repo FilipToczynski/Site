@@ -8,7 +8,7 @@ import Project from "../Project/Project";
 
 const This = () => {
   const icon = <CgChevronRightO />;
-  const src = "xd";
+  const src = "https://filiptoczynski.netlify.app/img/this.mp4";
   const langCtx = useContext(languageContext);
   const live = 'https://toczynski.netlify.app/';
   const code = 'https://github.com/FilipToczynski/Site'

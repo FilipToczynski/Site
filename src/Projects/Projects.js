@@ -34,7 +34,7 @@ const Projects = () => {
             <fig className={styles.projects__figure}>
               <img
                 onClick="scroll(0, 100);"
-                src="https://thumbs2.imgbox.com/d3/80/ULI4H71F_t.png"
+                src="https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                 alt="project"
               ></img>
             </fig>
