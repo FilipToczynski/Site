@@ -4,6 +4,7 @@ import {
   SiTypescript,
   SiJavascript,
   SiVisualstudiocode,
+  SiTestinglibrary,
 } from "react-icons/si";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { FaCss3Alt, FaSass, FaNpm } from "react-icons/fa";
@@ -77,6 +78,12 @@ const Skills = () => {
           <li>
             <SiReact />
             <p className={styles.skills__skill}>React.js</p>
+          </li>
+        </IconContext.Provider>
+        <IconContext.Provider value={{ size: "1.2rem", color: "#E33332" }}>
+          <li>
+            <SiTestinglibrary />
+            <p className={styles.skills__skill}>Testing library</p>
           </li>
         </IconContext.Provider>
         <IconContext.Provider value={{ size: "1.2rem", color: "#007acc" }}>
