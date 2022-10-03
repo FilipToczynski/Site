@@ -17,9 +17,9 @@ const Skills = () => {
     <div className={styles.skills} id="skills">
       <>
         {!langCtx.language && (
-          <h1 className={styles.skills__header}>advanced with</h1>
+          <h1 className={styles.skills__header}>Advanced with</h1>
         )}
-        {langCtx.language && <h1 className={styles.skills__header}>zaawansowany</h1>}
+        {langCtx.language && <h1 className={styles.skills__header}>Zaawansowany</h1>}
       </>
       <ul className={styles.skills__list}>
         <IconContext.Provider value={{ size: "1.2rem", color: "#e34c26" }}>
