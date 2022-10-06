@@ -29,7 +29,7 @@ function Navigation700px() {
 
   return (
     <>
-      {menu && <div className={styles.overlay} onClick={allowScroll}>asd</div>}
+      {menu && <div className={styles.overlay} onClick={allowScroll}></div>}
         <nav className={styles.burger}>
           <span onClick={toggleMenu}>
             <IconContext.Provider
