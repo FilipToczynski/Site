@@ -28,6 +28,7 @@
 .list__linkIcon {
     padding: 0 4px;
 }
+
 .list__link:after {
     content: "";
     position: absolute;
@@ -38,6 +39,7 @@
     background-color: #fff;
     transition: 0.3s;   
 }
+
 .list__link:hover {
     color: #fff;
 }
@@ -45,9 +47,3 @@
     width: 100%;
 }
 
-
-@media screen and (max-width: 600px) {
-    .list__link {
-       font-size: 0.8rem;
-    }
-  } 

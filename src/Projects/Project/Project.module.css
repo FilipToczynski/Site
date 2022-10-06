@@ -178,27 +178,3 @@
   }
 }
 
-@media screen and (max-width: 1800px) {
-  .project__view {
-    height: 140vh;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .project__view {
-    height: 130vh;
-  }
-}
-
-@media screen and (min-width: 1900px) {
-  .project__view {
-    height: 160vh;
-  }
-  
-}
-
-@media screen and (max-width: 600px) {
-  .project__view {
-    height: 100vh;
-  }
-}

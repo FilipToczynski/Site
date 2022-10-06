@@ -62,36 +62,3 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1200px) {
-  .projects__project {
-    height: 15rem;
-  }
-  .projects__project * {
-    font-size: 0.8rem;
-  }
-  .project__heading {
-    transform: translate(40%);
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .projects__project {
-    height: 12rem;
-  }
-  .project__heading {
-    transform: translate(30%);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .projects {
-    display: flex;
-    flex-direction: column;
-  }
-  .projects__project {
-    height: 20rem;
-  }
-  .project__heading {
-    transform: translate(45%);
-  }
-}

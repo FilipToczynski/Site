@@ -7,18 +7,32 @@ import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
 import { LanguageContextProvider } from "./store/langContext";
+import { BreakpointProvider, useCurrentWidth } from "react-socks";
+import Navigation700px from "./Navigation/Navigation700px/Navigation700px";
 
 function App() {
+
+  
+const NavigationComponents = () => {
+  const width = useCurrentWidth();
+  if (width > 700) {
+    return <Navigation />
+  } else {
+    return <Navigation700px />
+  }
+}
   return (
     <React.Fragment>
-      <LanguageContextProvider>
-        <Navigation />
-        <Hero />
-        <Projects />
-        <Skills />
-        <Contact />
-        <Footer />
-      </LanguageContextProvider>
+      <BreakpointProvider>
+        <LanguageContextProvider> 
+          <NavigationComponents />
+          <Hero />
+          <Projects />
+          <Skills />
+          <Contact />
+          <Footer />
+        </LanguageContextProvider>
+      </BreakpointProvider>
     </React.Fragment>
   );
 }
