@@ -8,6 +8,11 @@ import { MdLanguage } from "react-icons/md";
 const Project = (props) => {
   const { v4: uuidv4 } = require("uuid");
   const langCtx = useContext(languageContext);
+
+
+
+
+
   return (
     <>
       <div className={styles.project__view}>
