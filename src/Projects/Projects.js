@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { IconContext } from "react-icons";
 import { FaCss3Alt, FaSass } from "react-icons/fa";
 import {

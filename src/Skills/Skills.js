@@ -1,5 +1,4 @@
 import styles from "./Skills.module.css";
-import { Zoom } from "react-reveal";
 import {
   SiReact,
   SiTypescript,
