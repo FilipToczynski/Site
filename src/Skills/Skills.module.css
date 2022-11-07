@@ -1,43 +1,46 @@
-
 .skills {
-    height: 80vh;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    color: #fff;
-   padding: 2rem 0;
-    background: rgb(34, 35, 38);
-    background: -moz-linear-gradient(
-      135deg,
-      rgba(34, 35, 38, 1) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      135deg, 
-      rgba(34, 35, 38, 1) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-    background: linear-gradient(
-      135deg,
-      rgba(34, 35, 38, 1) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222326",endColorstr="#000000",GradientType=1);
-  
+  height: 50vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #fff;
+  padding: 2rem 0;
+  background: #0a0a0b;
+  position: relative;
 }
 
 .skills__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  width: 85%;
+}
+
+.skills_c {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 8rem;
+}
+.skills__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .skills__skill {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .skills__header {
-    margin-left: 2rem;
-    padding: 1rem 0 1rem 0;
+  margin-left: 2rem;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2rem;
 }
+

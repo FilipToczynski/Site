@@ -11,28 +11,21 @@ const Footer = () => {
         <a href="#navigation">
           <h1>Top</h1>
         </a>
-        <h1 className={styles.footer__react}>
-          Made with
-          <IconContext.Provider
-            value={{ size: "1.2rem", color: "#61DBFB", className: styles.spin }}
-          >
-            <SiReact />
-          </IconContext.Provider>
-          React
-        </h1>
 
         <ul>
           <h1>credit for images</h1>
-          <a href="https://unsplash.com/@dav420">
-            <li>David Pupaza</li>
+          <a href="https://www.pexels.com/pl-pl/@tima-miroshnichenko/">
+            <li>Tima Miroshnichenko</li>
           </a>
-          <a href="https://unsplash.com/@brookelark">
-            <li>Brooke Lark</li>
+          <a href="https://unsplash.com/@jannerboy62">
+            <li>Nick Fewings</li>
           </a>
           <a href="https://unsplash.com/@alexbemore">
             <li>Alexander Shatov</li>
           </a>
         </ul>
+      
+        
       </footer>}
 
       {langCtx.language && <footer className={styles.footer}>
@@ -52,7 +45,7 @@ const Footer = () => {
         <ul>
           <h1>Zdjęcia od</h1>
           <a href="https://unsplash.com/@dav420">
-            <li>David Pupaza</li>
+           <li>David Pupaza</li>
           </a>
           <a href="https://unsplash.com/@brookelark">
             <li>Brooke Lark</li>

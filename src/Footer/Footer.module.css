@@ -2,11 +2,13 @@
 .footer {
     height: 25vh;
     width: auto;
-    background-color: #141414;
+    background-color: #0a0a0b;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
+    z-index: 9;
 }
 
 .footer a {
@@ -34,4 +36,3 @@
         transform: rotate(360deg);
     }
 }
-

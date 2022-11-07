@@ -14,12 +14,12 @@ const Navigation = () => {
           <ul className={styles.list} id="navigation">
             <li className={styles.list__Item}>
               <a className={styles.list__link} href="#projects">
-                Projects
+                <span className={styles.list__line}>Projects</span>
               </a>
             </li>
             <li className={styles.list__Item}>
               <a className={styles.list__link} href="#skills">
-                Skills
+                <span className={styles.list__line}>Skills</span>
               </a>
             </li>
             <li className={styles.list__Item}>
@@ -29,7 +29,8 @@ const Navigation = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Github
+                <span className={styles.list__line}>Github</span>
+
                 <IconContext.Provider
                   value={{ size: "12px", className: styles.list__linkIcon }}
                 >
@@ -39,16 +40,20 @@ const Navigation = () => {
             </li>
             <li className={styles.list__Item}>
               <a className={styles.list__link} href="#contact">
-                Contact
+                <span className={styles.list__line}>Contact</span>
               </a>
             </li>
-            <li className={styles.list__link} onClick={langCtx.switchLang}>
-              <IconContext.Provider
-                value={{ size: "1rem", className: styles.list__linkIcon }}
-              >
-                <MdLanguage />
-              </IconContext.Provider>
-              {langCtx.language ? "EN" : "PL"}
+            <li className={styles.list__Item} onClick={langCtx.switchLang}>
+              <span className={styles.list__link}>
+                <span className={styles.list__line}>
+                  <IconContext.Provider
+                    value={{ size: "1rem", className: styles.list__linkIcon }}
+                  >
+                    <MdLanguage />
+                  </IconContext.Provider>
+                  {langCtx.language ? "EN" : "PL"}
+                </span>
+              </span>
             </li>
           </ul>
         </nav>
@@ -59,12 +64,12 @@ const Navigation = () => {
           <ul className={styles.list} id="navigation">
             <li className={styles.list__Item}>
               <a className={styles.list__link} href="#projects">
-                Projekty
+                <span className={styles.list__line}>Projekty</span>
               </a>
             </li>
             <li className={styles.list__Item}>
               <a className={styles.list__link} href="#skills">
-                Umiejętności
+                <span className={styles.list__line}>Umiejętności</span>
               </a>
             </li>
             <li className={styles.list__Item}>
@@ -74,7 +79,8 @@ const Navigation = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Github
+                <span className={styles.list__line}>Github</span>
+
                 <IconContext.Provider
                   value={{ size: "12px", className: styles.list__linkIcon }}
                 >
@@ -84,16 +90,20 @@ const Navigation = () => {
             </li>
             <li className={styles.list__Item}>
               <a className={styles.list__link} href="#contact">
-                Kontakt
+                <span className={styles.list__line}>Kontakt</span>
               </a>
             </li>
-            <li className={styles.list__link} onClick={langCtx.switchLang}>
-              <IconContext.Provider
-                value={{ size: "1rem", className: styles.list__linkIcon }}
-              >
-                <MdLanguage />
-              </IconContext.Provider>
-              {!langCtx.language ? "PL" : "EN"}
+            <li className={styles.list__Item} onClick={langCtx.switchLang}>
+              <span className={styles.list__link}>
+                <span className={styles.list__line}>
+                  <IconContext.Provider
+                    value={{ size: "1rem", className: styles.list__linkIcon }}
+                  >
+                    <MdLanguage />
+                  </IconContext.Provider>
+                  {langCtx.language ? "EN" : "PL"}
+                </span>
+              </span>
             </li>
           </ul>
         </nav>
