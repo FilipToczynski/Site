@@ -1,8 +1,7 @@
 import styles from "./Footer.module.css";
 import { useContext } from "react";
 import languageContext from "../store/langContext";
-import { IconContext } from "react-icons";
-import { FaCopyright } from "react-icons/fa";
+
 const Footer = () => {
   const langCtx = useContext(languageContext);
   return (
