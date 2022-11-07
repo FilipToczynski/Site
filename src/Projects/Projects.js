@@ -39,7 +39,7 @@ const Projects = () => {
             </ul>
           </div>
           <p className={styles.project__description}>
-            {!langCtx.language ? "en" : "pl"}
+            {!langCtx.language ? "Personal project made with React, web app for organizing tasks also RWD." : "Personalny projekt, aplikacja stworzona w react do organizacji zadań. (RWD)"}
           </p>
           <div>
             <a

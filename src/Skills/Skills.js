@@ -28,7 +28,7 @@ const Skills = () => {
       <ul className={styles.skills__list}>
         <IconContext.Provider value={{ size: "1.2rem", color: "#e34c26" }}>
           <li className={styles.skills__item}>
-            <span className={styles.skills_c}>
+            <span className={styles.skills__span}>
               <AiFillHtml5 />
               <p className={styles.skills__skill}>HTML</p>
             </span>
@@ -37,7 +37,7 @@ const Skills = () => {
 
         <IconContext.Provider value={{ size: "1.2rem", color: "#264de4" }}>
           <li className={styles.skills__item}>
-            <span className={styles.skills_c}>
+            <span className={styles.skills__span}>
               <FaCss3Alt />
               <p className={styles.skills__skill}>CSS</p>
             </span>
@@ -46,7 +46,7 @@ const Skills = () => {
 
         <IconContext.Provider value={{ size: "1.2rem", color: "#F0DB4F" }}>
           <li className={styles.skills__item}>
-            <span className={styles.skills_c}>
+            <span className={styles.skills__span}>
               <SiJavascript />
               <p className={styles.skills__skill}>JavaScript</p>
             </span>
@@ -54,7 +54,7 @@ const Skills = () => {
         </IconContext.Provider>
         <IconContext.Provider value={{ size: "1.2rem", color: "#61DBFB" }}>
           <li className={styles.skills__item}>
-            <span className={styles.skills_c}>
+            <span className={styles.skills__span}>
               <SiReact />
               <p className={styles.skills__skill}>React.js</p>
             </span>
@@ -62,7 +62,7 @@ const Skills = () => {
         </IconContext.Provider>
         <IconContext.Provider value={{ size: "1.2rem", color: "#007acc" }}>
           <li className={styles.skills__item}>
-            <span className={styles.skills_c}>
+            <span className={styles.skills__span}>
               <SiTypescript />
               <p className={styles.skills__skill}>TypeScript</p>
             </span>
@@ -72,7 +72,7 @@ const Skills = () => {
       <ul className={styles.skills__list}>
         <IconContext.Provider value={{ size: "1.2rem", color: "#E33332" }}>
           <li className={styles.skills__item}>
-            <span className={styles.skills_c}>
+            <span className={styles.skills__span}>
               <SiTestinglibrary />
               <p className={styles.skills__skill}>Testing library</p>
             </span>
@@ -80,7 +80,7 @@ const Skills = () => {
         </IconContext.Provider>
         <IconContext.Provider value={{ size: "1.2rem", color: "#c69" }}>
           <li className={styles.skills__item}>
-            <span className={styles.skills_c}>
+            <span className={styles.skills__span}>
               <FaSass />
               <p className={styles.skills__skill}>Sass</p>
             </span>
@@ -88,7 +88,7 @@ const Skills = () => {
         </IconContext.Provider>
         <IconContext.Provider value={{ size: "1.2rem", color: "#CC3534" }}>
           <li className={styles.skills__item}>
-            <span className={styles.skills_c}>
+            <span className={styles.skills__span}>
               <FaNpm />
               <p className={styles.skills__skill}>Npm</p>
             </span>
@@ -96,7 +96,7 @@ const Skills = () => {
         </IconContext.Provider>
         <IconContext.Provider value={{ size: "1.2rem", color: "#0078d7" }}>
           <li className={styles.skills__item}>
-            <span className={styles.skills_c}>
+            <span className={styles.skills__span}>
               <SiVisualstudiocode />
               <p className={styles.skills__skill}>Visual Studio Code</p>
             </span>
@@ -104,7 +104,7 @@ const Skills = () => {
         </IconContext.Provider>
         <IconContext.Provider value={{ size: "1.2rem", color: "#fff" }}>
           <li className={styles.skills__item}>
-            <span className={styles.skills_c}>
+            <span className={styles.skills__span}>
               <AiFillGithub />
               <p className={styles.skills__skill}>GitHub</p>
             </span>

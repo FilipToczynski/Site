@@ -19,6 +19,7 @@
   font-family: "Raleway", sans-serif;
   font-weight: 200;
   position: relative;
+  overflow: hidden;
 }
 .project__right {
   background-color: #f0bf01;
@@ -247,3 +248,71 @@ video {
   left: auto;
 }
 
+@media (max-width: 1024px) {
+  video {
+    height: 8rem;
+  }
+  .project__view {
+    height: 25rem;
+  }
+  .project__watermark {
+    top: 8rem;
+    font-size: 10rem;
+  }
+  .project__right::after {
+    font-size: 1rem;
+    top: 1rem;
+    left: 1rem;
+  }
+  .project__left::after {
+    font-size: 1rem;
+    top: 1rem;
+    right: 1rem;
+  }
+  .project__header {
+    font-size: 1.2rem;
+  }
+  .project__description {
+    font-size: .8rem;
+  }
+  .project__link {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 696px) {
+  video {
+    height: 4rem;
+  }
+  .project__view {
+    height: 18rem;
+  }
+  .project__watermark {
+    top: 4rem;
+    font-size: 6rem;
+  }
+  
+  .project__header {
+    font-size: .8rem;
+  }
+
+  .project__header::after {
+    margin-top: .2rem;
+  }
+  .project__description {
+    font-size: .6rem;
+  }
+  .project__link {
+    font-size: 0.6rem;
+  }
+  .project__view svg {
+    height: .6rem;
+  }
+  .project__header {
+    padding: 0 1rem;
+  }
+  .project__view {
+    margin-top: 1rem;
+  }
+
+}

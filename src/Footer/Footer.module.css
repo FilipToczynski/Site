@@ -1,38 +1,31 @@
-
 .footer {
-    height: 25vh;
-    width: auto;
-    background-color: #0a0a0b;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    z-index: 9;
+  height: 25vh;
+  width: 100%;
+  background-color: #0a0a0b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
+
 .footer a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .footer a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
-.footer__react * {
-    padding: 0 .5rem ;
+@media (max-width: 1024px) {
+  .footer * {
+    font-size: 0.8rem;
+  }
 }
 
-.spin {
-    animation: spins 10s infinite linear;   
-}
-
-@keyframes spins {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+@media (max-width: 696px) {
+  .footer * {
+    font-size: 0.6rem;
+  }
 }

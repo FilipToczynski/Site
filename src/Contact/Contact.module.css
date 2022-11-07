@@ -8,18 +8,19 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  /* background-image: url('../images/pexer.jpg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
 }
- .bggg {
-  height: 100%;
-  width: 100%;
+.contact__bg {
+  height: 100vh;
+  width: 100vw;
   position: absolute;
-  background-color: red;
- }
+  background: rgb(219,200,180);
+  background: -moz-linear-gradient(0deg, rgba(219,200,180,1) 0%, rgba(230,217,203,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(219,200,180,1) 0%, rgba(230,217,203,1) 100%);
+  background: linear-gradient(0deg, rgba(219,200,180,1) 0%, rgba(230,217,203,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dbc8b4",endColorstr="#e6d9cb",GradientType=1);
+}
 
- .contact::after {
+.contact::after {
   content: "Contact";
   position: absolute;
   right: -11rem;
@@ -33,7 +34,7 @@
   font-weight: 900;
   font-style: italic;
   line-height: 4rem;
-} 
+}
 
 .contact__head {
   display: flex;
@@ -42,14 +43,15 @@
 }
 
 .contact__head * {
- width: 100%;
- margin: 1rem 0;
- padding-right: 0.2rem;
+  width: 100%;
+  margin: 1rem 0;
+  padding-right: 0.2rem;
 }
 
 .contact__header {
   z-index: 10;
   color: #fff;
+  font-size: 1rem;
 }
 
 .contact__form {
@@ -71,6 +73,8 @@ input {
   width: 200px;
   background-color: #f1f1f1;
   border: 2px solid transparent;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
 }
 input:focus {
   outline: none;
@@ -78,7 +82,8 @@ input:focus {
 }
 input::placeholder {
   padding-left: 0.3rem;
-  font-family: Quicksand;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 textarea {
   border: none;
@@ -88,9 +93,12 @@ textarea {
   height: 6rem;
   background-color: #f1f1f1;
   border: 2px solid transparent;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  letter-spacing: .4px;
 }
 .bg {
- position: absolute; 
+  position: absolute;
   background-size: cover;
 }
 textarea:focus {
@@ -99,8 +107,9 @@ textarea:focus {
 }
 textarea::placeholder {
   font-size: 1rem;
-  font-family: Quicksand;
   padding-left: 0.3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 
 .contact__button {
@@ -139,9 +148,8 @@ textarea::placeholder {
 }
 
 .contact__modal:hover {
-  border: 2px solid #1fc6b5;  
+  border: 2px solid #1fc6b5;
 }
-
 
 .group1 {
   position: absolute;
@@ -166,16 +174,53 @@ svg .vector1 {
   stroke-dashoffset: 0;
 }
 
-svg .vector2 {
-  stroke: #fff;
-  stroke-dasharray: 1000;
-  animation: vec 40s ease;
-  stroke-dashoffset: 0;
+@media (max-width: 1024px) {
+ .contact__header {
+  font-size: .8rem;
+ }
+ .contact__head * {
+  margin: 0.2rem 0;
+ }
+ input {
+  font-size: .8rem;
+ }
+
+ textarea {
+  height: 3rem;
+ }
+ .contact__modal {
+  height: 14rem;
+  width: 24rem;
+ }
 }
 
-svg .vector3 {
-  stroke: #fff;
-  stroke-dasharray: 1000;
-  animation: vec 60s ease;
-  stroke-dashoffset: 0;
-}
+@media (max-width: 696px) {
+ .contact__modal {
+  height: 10rem;
+  width: 20rem;
+ }
+
+ .contact__header {
+  font-size: .6rem;
+ }
+ 
+ input {
+  font-size: .6rem;
+ }
+
+ textarea {
+  height: 2rem;
+ }
+
+ textarea::placeholder {
+  font-size: .6rem;
+  
+ }
+
+ .contact__button {
+  font-size: .6rem;
+  width: 4rem;
+  margin: .5rem;
+ }
+ 
+ }
